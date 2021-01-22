@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreditNote xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+            xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+    <ext:UBLExtensions>
+        <ext:UBLExtension>
+            <ext:ExtensionContent>
+                <ds:Signature Id="SignatureSP">
+                    <ds:SignedInfo>
+                        <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                        <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                        <ds:Reference URI="">
+                            <ds:Transforms>
+                                <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                            </ds:Transforms>
+                            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                            <ds:DigestValue>SDullYHk3cEcxlWTTx8KXvUD2wM=</ds:DigestValue>
+                        </ds:Reference>
+                    </ds:SignedInfo>
+                    <ds:SignatureValue>
+                        qHLhUwr044M58cOK9D1zZoXFZm89PYU1j+8K4+G7myxsjbfuJ2Ew9PieTZW/s5fQfWN2k0R4whuHPS9mK9UrkswzfY5Iw6Qwn1JzCGHztqnO4bflxs9d7hnaVHmMVkzHYQIbrxFM7/zLc9HBVlokxb1NNRMIzVT9ZThohSXyU4/sTqK7hfQAjMR3jZCX5nrSE5swXmNFXz+Olq/ffb2O7xEQWNUvxf9CzOerWgXN/wuevsOBGKzqrTEWM2+vteyxFEIiA9XsEg/yy3LROXe+SkaS4TM2fOfsNAs79MCEwXrOZuh96Mya0ALXvvI+Zan6jCGlZkbVD1yJjmEiletbHQ==
+                    </ds:SignatureValue>
+                    <ds:KeyInfo>
+                        <ds:X509Data>
+                            <ds:X509Certificate>
+                                MIIFFTCCA/2gAwIBAgIIHX7nEZPJxzEwDQYJKoZIhvcNAQELBQAwRjEkMCIGA1UEAwwbTGxhbWEucGUgU0hBMjU2IFN0YW5kYXJkIENBMREwDwYDVQQKDAhMTEFNQS5QRTELMAkGA1UEBhMCUEUwHhcNMTkwMzA4MTU1MjMyWhcNMjAwMzA3MTU1MjMyWjCB7zEwMC4GA1UECQwnSlIuIFRBQ05BIE5STy4gOTI4IC0tLS0gQkFSUklPIFZJQ1RPUklBMSYwJAYJKoZIhvcNAQkBFhdnYXRpY2EuZGFuaWVsQGdtYWlsLmNvbTEiMCAGA1UEAwwZR1VUSUVSUkVaIENSVVogSkhPTiBKRVNVUzERMA8GA1UEBRMIMjk1OTY1OTYxFDASBgNVBAsMCzIwNDQ3Nzg1MjE5MSowKAYDVQQKDCFQVU5PIEdBUyBTT0NJRURBRCBBTk9OSU1BIENFUlJBREExDTALBgNVBAcMBFBVTk8xCzAJBgNVBAYTAlBFMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAynR+1T9fmF0ui2Qf0MVuQ9g+4Xv5xGltYqklESUssEfTVy0qlmr2nFc8ayZZsI2ZpJXibcjPEJ518CBCIz8h0CjYFmWaE0dT/vbcf9/xyvbTuOcnBKfSUxN6Lg+UyrVyKriUVR7lUwQ9DkyN8suJj0qWTlP1bfG3qR8E5M3H0IDa8kCfCmVzs73BniUbQKDiRNb195+USNu/5Ww5eG/PuPNVRGdSX8zg0HwHlqynohKPEYfbtHhe3R61wIdU649IQ2+vIHncY5FNsO8wTS6ZRtCPc0WdtPJnYaVofMU0kFkpWyNUCs4i8XK0Zp9+5C3poqbaAt1QA/zmZs+8IX09ZQIDAQABo4IBWzCCAVcwDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAWgBRdiFut62X7/mii5NlvPVdyou8rmTAwBggrBgEFBQcBAQQkMCIwIAYIKwYBBQUHMAGGFGh0dHA6Ly9vY3NwLmxsYW1hLnBlMCIGA1UdEQQbMBmBF2dhdGljYS5kYW5pZWxAZ21haWwuY29tMEYGA1UdIAQ/MD0wOwYNKwYBBAGDl3cAAQACATAqMCgGCCsGAQUFBwIBFhxodHRwczovL2xsYW1hLnBlL3JlcG9zaXRvcnkvMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLmxsYW1hLnBlL2xsYW1hcGVzdGFuZGFyZGNhLmNybDAdBgNVHQ4EFgQU/3Pd3H49xNnLXElXcaqt1esUq+8wDgYDVR0PAQH/BAQDAgbAMA0GCSqGSIb3DQEBCwUAA4IBAQCyjicLQVmk5KvPatQB8vgS5a0URT+yeeP+kRcLlbUp8jrZLaneZ9jBwRcFHrv0ArZ6fVzJKXtszxsWW7jw/potMfM9Fd9rl6eF+fzerqeVapsWwqhDRy7q3G65iJ2RO6Ei1FXNk6IEYVuL7TCrbEEDpa2HXvTCrRRssic+lcvV9u0ijJ//h12qdI4/zUDwNkBVA9DXako8FQqoqcXlMRtb0uFtOJb/G+/51eeGDnIDQf6Deq1j5ZipDNo3/vRTbXyMvBfECcexNg8OlgewpHb9ziGiJQJrYgmzobdVQza98kz0BdZGqyU8UBD4FaqCYCDtSQmIqKIljhm7oOpYcxNn
+                            </ds:X509Certificate>
+                        </ds:X509Data>
+                    </ds:KeyInfo>
+                </ds:Signature>
+            </ext:ExtensionContent>
+        </ext:UBLExtension>
+    </ext:UBLExtensions>
+    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+    <cbc:CustomizationID>2.0</cbc:CustomizationID>
+    <cbc:ID>F706-00000004</cbc:ID>
+    <cbc:IssueDate>2020-09-26</cbc:IssueDate>
+    <cbc:IssueTime>00:00:01</cbc:IssueTime>
+    <cbc:Note languageLocaleID="1000"><![CDATA[SON CIENTO DIECIOCHO CON 00/100]]></cbc:Note>
+    <cbc:DocumentCurrencyCode>PEN</cbc:DocumentCurrencyCode>
+    <cac:DiscrepancyResponse>
+        <cbc:ReferenceID>F006-00000005</cbc:ReferenceID>
+        <cbc:ResponseCode>01</cbc:ResponseCode>
+        <cbc:Description>ANULACION DE LA OPERACION</cbc:Description>
+    </cac:DiscrepancyResponse>
+    <cac:BillingReference>
+        <cac:InvoiceDocumentReference>
+            <cbc:ID>F006-00000005</cbc:ID>
+            <cbc:DocumentTypeCode>01</cbc:DocumentTypeCode>
+        </cac:InvoiceDocumentReference>
+    </cac:BillingReference>
+    <cac:Signature>
+        <cbc:ID>20600186494</cbc:ID>
+        <cbc:Note>GREENTER</cbc:Note>
+        <cac:SignatoryParty>
+            <cac:PartyIdentification>
+                <cbc:ID>20600186494</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name><![CDATA[JIREH CRUZ S.A.C]]></cbc:Name>
+            </cac:PartyName>
+        </cac:SignatoryParty>
+        <cac:DigitalSignatureAttachment>
+            <cac:ExternalReference>
+                <cbc:URI>#SIGN-GREEN</cbc:URI>
+            </cac:ExternalReference>
+        </cac:DigitalSignatureAttachment>
+    </cac:Signature>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="6">20600186494</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name><![CDATA[JIREH CRUZ SOCIEDAD ANONIMA CERRADA]]></cbc:Name>
+            </cac:PartyName>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName><![CDATA[JIREH CRUZ S.A.C]]></cbc:RegistrationName>
+                <cac:RegistrationAddress>
+                    <cbc:ID>210306</cbc:ID>
+                    <cbc:AddressTypeCode>0001</cbc:AddressTypeCode>
+                    <cbc:CitySubdivisionName>NONE</cbc:CitySubdivisionName>
+                    <cbc:CityName>CARABAYA</cbc:CityName>
+                    <cbc:CountrySubentity>PUNO</cbc:CountrySubentity>
+                    <cbc:District>JULIACA</cbc:District>
+                    <cac:AddressLine>
+                        <cbc:Line><![CDATA[AV. SANTO DOMINGO NRO. 133 (ESQUINA CON JIRON AREQUIPA)]]></cbc:Line>
+                    </cac:AddressLine>
+                    <cac:Country>
+                        <cbc:IdentificationCode>PE</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:RegistrationAddress>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="6">10472596972</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName><![CDATA[TIPO MAMANI NOE WILBER]]></cbc:RegistrationName>
+                <cac:RegistrationAddress>
+                    <cac:AddressLine>
+                        <cbc:Line><![CDATA[AV. SANTO DOMINGO NRO. 133 (ESQUINA CON JIRON AREQUIPA)]]></cbc:Line>
+                    </cac:AddressLine>
+                    <cac:Country>
+                        <cbc:IdentificationCode>PE</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:RegistrationAddress>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="PEN">18.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="PEN">100.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="PEN">18.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cac:TaxScheme>
+                    <cbc:ID>1000</cbc:ID>
+                    <cbc:Name>IGV</cbc:Name>
+                    <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="PEN">100.00</cbc:LineExtensionAmount>
+        <cbc:TaxInclusiveAmount currencyID="PEN">118.00</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="PEN">0.00</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="PEN">0.00</cbc:ChargeTotalAmount>
+        <cbc:PrepaidAmount currencyID="PEN">0.00</cbc:PrepaidAmount>
+        <cbc:PayableAmount currencyID="PEN">118.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:CreditNoteLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CreditedQuantity unitCode="NIU">1.00</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="PEN">100.00</cbc:LineExtensionAmount>
+        <cac:PricingReference>
+            <cac:AlternativeConditionPrice>
+                <cbc:PriceAmount currencyID="PEN">118</cbc:PriceAmount>
+                <cbc:PriceTypeCode>01</cbc:PriceTypeCode>
+            </cac:AlternativeConditionPrice>
+        </cac:PricingReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="PEN">18.00</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxableAmount currencyID="PEN">100.00</cbc:TaxableAmount>
+                <cbc:TaxAmount currencyID="PEN">18.00</cbc:TaxAmount>
+                <cac:TaxCategory>
+                    <cbc:Percent>18.00</cbc:Percent>
+                    <cbc:TaxExemptionReasonCode>10</cbc:TaxExemptionReasonCode>
+                    <cac:TaxScheme>
+                        <cbc:ID>1000</cbc:ID>
+                        <cbc:Name>IGV</cbc:Name>
+                        <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Description><![CDATA[ACERO DOBLABLE]]></cbc:Description>
+            <cac:SellersItemIdentification>
+                <cbc:ID>C01</cbc:ID>
+            </cac:SellersItemIdentification>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="PEN">100</cbc:PriceAmount>
+        </cac:Price>
+    </cac:CreditNoteLine>
+</CreditNote>

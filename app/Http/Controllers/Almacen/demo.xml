@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ar:ApplicationResponse xmlns:ar="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+                        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                        xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <ext:UBLExtensions>
+        <ext:UBLExtension>
+            <ext:ExtensionContent>
+                <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+                    <SignedInfo>
+                        <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/>
+                        <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+                        <Reference URI="">
+                            <Transforms>
+                                <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/>
+                            </Transforms>
+                            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                            <DigestValue>lktPCIA+t8DORqE0xW/hnQ2r39g=</DigestValue>
+                        </Reference>
+                    </SignedInfo>
+                    <SignatureValue>
+                        NFGKdgp6Ak16wiQyyqpWQaaQnLfAvp43NEfuw6k+2L9Dm60uYKffN08360DiLnCfjqSsH1WgWlP8tFSk0U9PDwgu7jYtp71/nxY0ECdPo1eRXKV83AodGVkb/2Jnod53QwK3hNsKPQv9efTFixoGOx/eKRnc2iVONhQJIvxR7/rZosN9oirXJ3j1eiKgdGceo7GJjhloVPJ6EV6+mKodMwrc8ciuLOxBhRkbKerI035oWht7lW7AgZbVcKqwhOhX85FQb/zLkavUA6SA1eLGx0fHkAX+UIzN12Px2MqHbz3lLadBO+FVYdeRkOg0NmXFl3eRskvRi5eRlmEAejZgFA==
+                    </SignatureValue>
+                    <KeyInfo>
+                        <X509Data>
+                            <X509Certificate>
+                                MIIJEjCCBvqgAwIBAgIJThihKQxC9BJdMA0GCSqGSIb3DQEBCwUAMIIBIjELMAkGA1UEBhMCUEUxDTALBgNVBAgMBExJTUExDTALBgNVBAcMBExJTUExPTA7BgNVBAsMNHNlZSBjdXJyZW50IGFkZHJlc3MgYXQgd3d3LmNhbWVyZmlybWEuY29tLnBlL2FkZHJlc3MxMDAuBgNVBAsMJ0FDIENBTUVSRklSTUEgUEVSw5ogQ0VSVElGSUNBRE9TIC0gMjAxNjEUMBIGA1UEBRMLMjA1NjYzMDI0NDcxGjAYBgNVBGEMEU5UUlBFLTIwNTY2MzAyNDQ3MSAwHgYDVQQKDBdDQU1FUkZJUk1BIFBFUsOaIFMuQS5DLjEwMC4GA1UEAwwnQUMgQ0FNRVJGSVJNQSBQRVLDmiBDRVJUSUZJQ0FET1MgLSAyMDE2MB4XDTIwMDkyNTIxMTg0NFoXDTIyMDkyNTIxMTg0NFowggE8MSUwIwYJKoZIhvcNAQkBFhZsZGVsYWZsb3JAc3VuYXQuZ29iLnBlMSYwJAYDVQQDDB1MVUlTIEVOUklRVUUgREUgTEEgRkxPUiBTQUVOWjEVMBMGA1UEKgwMTFVJUyBFTlJJUVVFMRkwFwYDVQQEDBBERSBMQSBGTE9SIFNBRU5aMRUwEwYDVQQFEwxETkk6MDcyODU5NjQxDTALBgNVBAcMBExJTUExFDASBgNVBAgMC0xJTUEgLSBMSU1BMRIwEAYDVQQMDAlBUE9ERVJBRE8xETAPBgNVBAsMCEdFUkVOQ0lBMSMwIQYDVQQLDBpJc3N1ZWQgYnkgUEVSVU1FRElBICBbUEUxXTEUMBIGA1UEYQwLMjAxMzEzMTI5NTUxDjAMBgNVBAoMBVNVTkFUMQswCQYDVQQGEwJQRTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAN5xR7AN6eOyuSVqt+q9xienHOGvk9QzdTWKg1RapBIaoUg1D+SPVEgirrqLCQvByNM5gei/j8gGerJzbMsExUVElcL2EwhMvMaBmJ0zkh+euEY6ijs4jXzaX9djqffffY6Vj0XGVhFoRHB6gXLVYFhahg72350eQRzN8W1A40TBOZqdJtRCT4V36Ps0NXx5V+BL1BW5Z++KSCCk8OJM9GIytRgorjPSzicHzw5hT21wTfGMb5vr1EqsYCMl1V6DsUuJFo7U9E24lajfHwn24RuPRa+90Nfk9KI8kmoOzkoHOO2b+bc3sS2sGTtan7hgh/MztuP0N+Cl2w4ewwrUrgkCAwEAAaOCAyswggMnMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgbAMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDAdBgNVHQ4EFgQUcdwWIVyAj48R/7faHzE/vyunlHUwgY0GCCsGAQUFBwEBBIGAMH4wVAYIKwYBBQUHMAKGSGh0dHA6Ly93d3cuY2FtZXJmaXJtYS5jb20vY2VydHMvYWNfY2FtZXJmaXJtYV9wZXJ1X2NlcnRpZmljYWRvcy0yMDE2LmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3AuY2FtZXJmaXJtYS5jb20wHwYDVR0jBBgwFoAUOm5lGOdW0uTzLd2lfHJt/zDhhicwgaAGA1UdHwSBmDCBlTBIoEagRIZCaHR0cDovL2NybC5jYW1lcmZpcm1hLmNvbS9hY19jYW1lcmZpcm1hX3BlcnVfY2VydGlmaWNhZG9zLTIwMTYuY3JsMEmgR6BFhkNodHRwOi8vY3JsMS5jYW1lcmZpcm1hLmNvbS9hY19jYW1lcmZpcm1hX3BlcnVfY2VydGlmaWNhZG9zLTIwMTYuY3JsMIHDBgNVHREEgbswgbiBFmxkZWxhZmxvckBzdW5hdC5nb2IucGWkgZ0wgZoxHDAaBgorBgEEAYGHLh4HDAxMVUlTIEVOUklRVUUxGjAYBgorBgEEAYGHLh4IDApERSBMQSBGTE9SMRUwEwYKKwYBBAGBhy4eCQwFU0FFTloxRzBFBgorBgEEAYGHLh4KDDdDRVJUSUZJQ0FETyBERSBQRVJTT05BIEZJU0lDQSBDT04gVklOQ1VMQUNJT04gQSBFTVBSRVNBMBwGA1UdEgQVMBOBEWNhQGNhbWVyZmlybWEuY29tMIGQBgNVHSAEgYgwgYUwgYIGDCsGAQQBgYcuHhAAATByMCkGCCsGAQUFBwIBFh1odHRwczovL3BvbGljeS5jYW1lcmZpcm1hLmNvbTBFBggrBgEFBQcCAjA5DDdDRVJUSUZJQ0FETyBERSBQRVJTT05BIEZJU0lDQSBDT04gVklOQ1VMQUNJT04gQSBFTVBSRVNBMA0GCSqGSIb3DQEBCwUAA4ICAQBvLHkps7K8TsAfAK7A4Li23ZqUuGsVEDkR/FZAqtOqrh9AIrAbFN7FANklGt1B07YGz+yYFUvNjNYplmPBIVV7GiVfuhLV5ojhvWwUJLHrGTkvbj/e7fWLivmMkDMSmE5GDcABYXAiofYt3ZfDUbHer8jEiWWltisrg/zSXk/UAjXA5Q5jPzcgLIqXlR2LxLnOGRaTnB9iLcQrW8wF8ptShf5EYQd47SsVWoy5RPxz+tQHQKUXEhuvgXElsGXrCMsYximjN5AzJj++yo1lacUhXx8x+JMdOgOqEvjEaKDH9xqsm9z5yD85hu8uBArss5Yo+Oy8m5mVU7L3tMqY0q7exkvPQGUHVkJLm7nP4fThFhMPVQ5mAxJKE6MqbdCytxnLHobPvo+H3bpHHOiw+k8LXcewo/Q3OBcCXBe4bxkIrMKX+CjIXeJ++QqdaYUoZuRJv0ikoUPuRpsLZUeMF3DC0GyurtawQhdH2BQuE6PZv3gvHxuH58Y8fnjJpqC/JUKc4hvnZskP0Dot4G7AMxzCsBmRkzBe4DU+2bDgFF81tRslbqiPNl9Oq4EJqXT16ZmF/w+ikRN/bPDBfgaB67Gthw7RZLxHxiwgbDXEUbIt+6NWeQ+UonH34nMfdnbHuVu7uZpU1mo1AHolG2bOL3sd3j4jTzAaRC22SQ04ACBv0g==
+                            </X509Certificate>
+                            <X509IssuerSerial>
+                                <X509IssuerName>CN="AC CAMERFIRMA PER\C3\9A CERTIFICADOS - 2016", O="CAMERFIRMA
+                                    PER\C3\9A S.A.C.", 2.5.4.97=NTRPE-20566302447, serialNumber=20566302447, OU="AC
+                                    CAMERFIRMA PER\C3\9A CERTIFICADOS - 2016", OU=see current address at
+                                    www.camerfirma.com.pe/address, L=LIMA, ST=LIMA, C=PE
+                                </X509IssuerName>
+                                <X509SerialNumber>1440620782610145350237</X509SerialNumber>
+                            </X509IssuerSerial>
+                        </X509Data>
+                    </KeyInfo>
+                    <Proposito>Cumple proposito</Proposito>
+                    <Revocacion>Cumple revocacion</Revocacion>
+                    <TSL>Cumple tsl</TSL>
+                    <Expiracion>No ha expirado</Expiracion>
+                </Signature>
+            </ext:ExtensionContent>
+        </ext:UBLExtension>
+    </ext:UBLExtensions>
+    <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+    <cbc:CustomizationID>1.0</cbc:CustomizationID>
+    <cbc:ID>202006161933954</cbc:ID>
+    <cbc:IssueDate>2020-11-24</cbc:IssueDate>
+    <cbc:IssueTime>00:00:00</cbc:IssueTime>
+    <cbc:ResponseDate>2020-11-24</cbc:ResponseDate>
+    <cbc:ResponseTime>13:44:04</cbc:ResponseTime>
+    <cac:Signature>
+        <cbc:ID>SignSUNAT</cbc:ID>
+        <cac:SignatoryParty>
+            <cac:PartyIdentification>
+                <cbc:ID>20131312955</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>SUNAT</cbc:Name>
+            </cac:PartyName>
+        </cac:SignatoryParty>
+        <cac:DigitalSignatureAttachment>
+            <cac:ExternalReference>
+                <cbc:URI>#SignSUNAT</cbc:URI>
+            </cac:ExternalReference>
+        </cac:DigitalSignatureAttachment>
+    </cac:Signature>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800413175ZAPATOLIGHTGOLDNEWMETALIC451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800213172ZAPATOBISTROVERNIZ451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800213172ZAPATOPRETOVERNIZ451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800213172ZAPATOBISTROVERNIZ451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800213172ZAPATOPRETOVERNIZ451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "819013121SANDALIALIGHTGOLDNEWMETALIC451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "819013121SANDALIASILVERNEWMETALIC451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "819013121SANDALIABRONZENEWMETALIC451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800413175ZAPATOPRETOVERNIZ451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800413069ZAPATOCASTORVERNIZ451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800413069ZAPATOPRETOVERNIZ451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800413071ZAPATOBRANCONAPASOFT451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800413071ZAPATOPRETONAPASOFT451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800213075ZAPATOTOMATEVERNIZ451452453")
+    </cbc:Note>
+    <cbc:Note>4269 - El dato ingresado como codigo de producto no cumple con el formato establecido. - INFO: 4269 (nodo:
+        "cac:SellersItemIdentification/cbc:ID" valor: "800213075ZAPATOPRETOVERNIZ451452453")
+    </cbc:Note>
+    <cbc:Note>4299 - La sumatoria del total valor de venta - operaciones gravadas de l&#237;nea no corresponden al total
+        - INFO : 4299 (nodo: "cac:TaxSubtotal/cbc:TaxableAmount" valor: "15104.16")
+    </cbc:Note>
+    <cbc:Note>4291 - El dato ingresado como cargo/descuento no es valido a nivel global. - Error Cargo/Descuento 00:
+        4291 (nodo: "cac:AllowanceCharge/cbc:ChargeIndicator" valor: "false")
+    </cbc:Note>
+    <cbc:Note>4290 - El c&#225;lculo del IGV es Incorrecto - INFO : 4290 (nodo: "cac:TaxSubtotal/cbc:TaxAmount" valor:
+        "2718.75")
+    </cbc:Note>
+    <cbc:Note>4307 - La sumatoria consignados en descuentos globales no corresponden al total. - INFO : 4307 (nodo:
+        "cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount" valor: "2665.44")
+    </cbc:Note>
+    <cbc:Note>4312 - El importe total del comprobante no coincide con el valor calculado - INFO : 4312 (nodo:
+        "cac:LegalMonetaryTotal/cbc:PayableAmount" valor: "17822.91")
+    </cbc:Note>
+    <cbc:Note>4309 - La sumatoria de valor de venta no corresponde a los importes consignados - INFO : 4309 (nodo:
+        "cac:LegalMonetaryTotal/cbc:LineExtensionAmount" valor: "15104.16")
+    </cbc:Note>
+    <cbc:Note>4310 - La sumatoria del Total del valor de venta m&#225;s los impuestos no concuerda con la base imponible
+        - INFO : 4310 (nodo: "cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount" valor: "17822.91")
+    </cbc:Note>
+    <cac:SenderParty>
+        <cac:PartyIdentification>
+            <cbc:ID>20131312955</cbc:ID>
+        </cac:PartyIdentification>
+    </cac:SenderParty>
+    <cac:ReceiverParty>
+        <cac:PartyIdentification>
+            <cbc:ID>20603907052</cbc:ID>
+        </cac:PartyIdentification>
+    </cac:ReceiverParty>
+    <cac:DocumentResponse>
+        <cac:Response>
+            <cbc:ReferenceID>F002-00000072</cbc:ReferenceID>
+            <cbc:ResponseCode>0</cbc:ResponseCode>
+            <cbc:Description>La Factura numero F002-00000072, ha sido aceptada</cbc:Description>
+        </cac:Response>
+        <cac:DocumentReference>
+            <cbc:ID>F002-00000072</cbc:ID>
+        </cac:DocumentReference>
+        <cac:RecipientParty>
+            <cac:PartyIdentification>
+                <cbc:ID>6-20531588119</cbc:ID>
+            </cac:PartyIdentification>
+        </cac:RecipientParty>
+    </cac:DocumentResponse>
+</ar:ApplicationResponse>
